@@ -4,7 +4,7 @@
 
 This repository contains the Kubernetes deployment setup for a containerized web service, including:
 
-> Dockerized web application (Flask/FastAPI/Node.js)
+ Dockerized web application (Flask/FastAPI/Node.js)
 Kubernetes (Minikube/K3s) deployment
 Auto-scaling with Horizontal Pod Autoscaler (HPA)
 Load balancing for high availability
@@ -25,8 +25,8 @@ Jenkins (Optional): Automates CI/CD pipeline
 Install Docker, Minikube/K3s, kubectl, and Helm
 Ensure Kubernetes cluster is running
 Clone this repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+>git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name><
 
 2️⃣ Build & Deploy the Web Service
 eval $(minikube docker-env)  # Use Minikube’s Docker daemon
