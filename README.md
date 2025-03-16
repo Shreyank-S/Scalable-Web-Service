@@ -20,12 +20,12 @@ This repository contains the Kubernetes deployment setup for a containerized web
 
 ## 🛠️ Setup & Installation
 
-- 1️⃣ Prerequisites
+1️⃣ Prerequisites
  - Install Docker, Minikube/K3s, kubectl, and Helm
  - Ensure Kubernetes cluster is running
  - Clone this repository
->git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+> git clone https://github.com/<your-username>/<repo-name>.git
+> cd <repo-name>
 
 2️⃣ Build & Deploy the Web Service
 > eval $(minikube docker-env)  # Use Minikube’s Docker daemon
@@ -44,7 +44,7 @@ cd <repo-name>
 ## ⚙️ Troubleshooting
 
 🛑 Pod in ImagePullBackOff State?
-Use Minikube’s Docker daemon and rebuild:
+- Use Minikube’s Docker daemon and rebuild:
 
 > eval $(minikube docker-env)
 > docker build -t flask-app .
@@ -58,9 +58,9 @@ Use Minikube’s Docker daemon and rebuild:
 
 ##  Monitoring & Logs
 
-Grafana Dashboard: http://<minikube-ip>:3000
-Kibana Logs: http://<minikube-ip>:5601
-Prometheus Metrics: http://<minikube-ip>:9090
+- Grafana Dashboard: http://<minikube-ip>:3000
+- Kibana Logs: http://<minikube-ip>:5601
+- Prometheus Metrics: http://<minikube-ip>:9090
 
 ## 📄 File Structure
 
@@ -73,8 +73,8 @@ Prometheus Metrics: http://<minikube-ip>:9090
 
 ## 🤝 Contribution Guidelines
 
-Fork the repository
-Create a new branch (feature-branch)
-Commit your changes
-Push to GitHub and create a PR
+- Fork the repository
+- Create a new branch (feature-branch)
+- Commit your changes
+- Push to GitHub and create a PR
 
