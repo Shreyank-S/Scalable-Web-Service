@@ -4,27 +4,26 @@
 
 This repository contains the Kubernetes deployment setup for a containerized web service, including:
 
- Dockerized web application (Flask/FastAPI/Node.js)
-Kubernetes (Minikube/K3s) deployment
-Auto-scaling with Horizontal Pod Autoscaler (HPA)
-Load balancing for high availability
-Observability using Prometheus, Grafana, and the ELK stack
-Resiliency measures for fault tolerance
+- Dockerized web application (Flask/FastAPI/Node.js)
+- Kubernetes (Minikube/K3s) deployment
+- Auto-scaling with Horizontal Pod Autoscaler (HPA)
+- Load balancing for high availability
+- Observability using Prometheus, Grafana
+- Resiliency measures for fault tolerance
 
 ## 🚀 Technologies Used
 
-Docker: Containerizes the application
-Kubernetes (Minikube/K3s): Orchestrates containers
-Helm: Manages dependencies
-Prometheus & Grafana: Monitors system metrics
-ELK Stack (Elasticsearch, Logstash, Kibana): Handles centralized logging
-Jenkins (Optional): Automates CI/CD pipeline
-🛠️ Setup & Installation
+- Docker: Containerizes the application
+- Kubernetes (Minikube/K3s): Orchestrates containers
+- Helm: Manages dependencies
+- Prometheus & Grafana: Monitors system metrics
 
-1️⃣ Prerequisites
-Install Docker, Minikube/K3s, kubectl, and Helm
-Ensure Kubernetes cluster is running
-Clone this repository
+## 🛠️ Setup & Installation
+
+- 1️⃣ Prerequisites
+ - Install Docker, Minikube/K3s, kubectl, and Helm
+ - Ensure Kubernetes cluster is running
+ - Clone this repository
 >git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 
