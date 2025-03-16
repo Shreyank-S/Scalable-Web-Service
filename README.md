@@ -24,8 +24,8 @@ This repository contains the Kubernetes deployment setup for a containerized web
  - Install Docker, Minikube/K3s, kubectl, and Helm
  - Ensure Kubernetes cluster is running
  - Clone this repository
-> git clone https://github.com/<your-username>/<repo-name>.git <br /> 
-> cd <repo-name>
+> git clone https://github.com/Shreyank-S/Scalable-Web-Service.git <br /> 
+> cd Scalable-Web-Service
 
 2️⃣ Build & Deploy the Web Service
 > eval $(minikube docker-env)  # Use Minikube’s Docker daemon <br /> 
