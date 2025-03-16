@@ -24,22 +24,22 @@ This repository contains the Kubernetes deployment setup for a containerized web
  - Install Docker, Minikube/K3s, kubectl, and Helm
  - Ensure Kubernetes cluster is running
  - Clone this repository
-> git clone https://github.com/<your-username>/<repo-name>.git
+> git clone https://github.com/<your-username>/<repo-name>.git< br / > 
 > cd <repo-name>
 
 2️⃣ Build & Deploy the Web Service
-> eval $(minikube docker-env)  # Use Minikube’s Docker daemon
-> docker build -t flask-app .
-> kubectl apply -f deployment.yaml  # Deploy to Kubernetes
-> kubectl expose deployment flask-app --type=LoadBalancer --port=80 --target-port=5001
+> eval $(minikube docker-env)  # Use Minikube’s Docker daemon< br / > 
+> docker build -t flask-app .< br / > 
+> kubectl apply -f deployment.yaml  # Deploy to Kubernetes< br / > 
+> kubectl expose deployment flask-app --type=LoadBalancer --port=80 --target-port=5001< br / > 
 
 3️⃣ Enable Auto-Scaling
-> kubectl autoscale deployment flask-app --cpu-percent=50 --min=1 --max=5
+> kubectl autoscale deployment flask-app --cpu-percent=50 --min=1 --max=5< br / > 
 
 4️⃣ Install Monitoring & Logging Stack
-> helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-> helm install prometheus prometheus-community/kube-prometheus-stack
-> helm install elk-stack elastic/elasticsearch kibana logstash
+> helm repo add prometheus-community https://prometheus-community.github.io/helm-charts< br / > 
+> helm install prometheus prometheus-community/kube-prometheus-stack< br / > 
+> helm install elk-stack elastic/elasticsearch kibana logstash< br / > 
 
 ## ⚙️ Troubleshooting
 
