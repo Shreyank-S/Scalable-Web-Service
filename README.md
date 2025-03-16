@@ -24,7 +24,7 @@ This repository contains the Kubernetes deployment setup for a containerized web
  - Install Docker, Minikube/K3s, kubectl, and Helm
  - Ensure Kubernetes cluster is running
  - Clone this repository
-> git clone https://github.com/<your-username>/<repo-name>.git< br / > 
+> git clone https://github.com/<your-username>/<repo-name>.git <br /> 
 > cd <repo-name>
 
 2️⃣ Build & Deploy the Web Service
@@ -39,7 +39,7 @@ This repository contains the Kubernetes deployment setup for a containerized web
 4️⃣ Install Monitoring & Logging Stack
 > helm repo add prometheus-community https://prometheus-community.github.io/helm-charts< br / > 
 > helm install prometheus prometheus-community/kube-prometheus-stack< br / > 
-> helm install elk-stack elastic/elasticsearch kibana logstash< br / > 
+> helm install elk-stack elastic/elasticsearch kibana logstash < br / > 
 
 ## ⚙️ Troubleshooting
 
