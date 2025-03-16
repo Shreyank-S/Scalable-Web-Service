@@ -28,32 +28,32 @@ This repository contains the Kubernetes deployment setup for a containerized web
 > cd <repo-name>
 
 2️⃣ Build & Deploy the Web Service
-> eval $(minikube docker-env)  # Use Minikube’s Docker daemon< br / > 
-> docker build -t flask-app .< br / > 
-> kubectl apply -f deployment.yaml  # Deploy to Kubernetes< br / > 
-> kubectl expose deployment flask-app --type=LoadBalancer --port=80 --target-port=5001< br / > 
+> eval $(minikube docker-env)  # Use Minikube’s Docker daemon <br /> 
+> docker build -t flask-app . <br /> 
+> kubectl apply -f deployment.yaml  # Deploy to Kubernetes <br /> 
+> kubectl expose deployment flask-app --type=LoadBalancer --port=80 --target-port=5001 <br /> 
 
 3️⃣ Enable Auto-Scaling
-> kubectl autoscale deployment flask-app --cpu-percent=50 --min=1 --max=5< br / > 
+> kubectl autoscale deployment flask-app --cpu-percent=50 --min=1 --max=5 <br /> 
 
 4️⃣ Install Monitoring & Logging Stack
-> helm repo add prometheus-community https://prometheus-community.github.io/helm-charts< br / > 
-> helm install prometheus prometheus-community/kube-prometheus-stack< br / > 
-> helm install elk-stack elastic/elasticsearch kibana logstash < br / > 
+> helm repo add prometheus-community https://prometheus-community.github.io/helm-charts <br />  
+> helm install prometheus prometheus-community/kube-prometheus-stack <br /> 
+> helm install elk-stack elastic/elasticsearch kibana logstash <br />  
 
 ## ⚙️ Troubleshooting
 
 🛑 Pod in ImagePullBackOff State?
 - Use Minikube’s Docker daemon and rebuild:
 
-> eval $(minikube docker-env)
-> docker build -t flask-app .
-> kubectl delete deployment flask-app
-> kubectl apply -f deployment.yaml
+> eval $(minikube docker-env) <br /> 
+> docker build -t flask-app . <br /> 
+> kubectl delete deployment flask-app <br /> 
+> kubectl apply -f deployment.yaml <br /> 
 
 🛑 Helm Not Found?
-> brew install helm
-> export PATH=/opt/homebrew/bin:$PATH
+> brew install helm <br /> 
+> export PATH=/opt/homebrew/bin:$PATH <br /> 
 
 
 ##  Monitoring & Logs
